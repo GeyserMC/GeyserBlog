@@ -1,24 +1,27 @@
 <head>
-    <title>GeyserMC Blog</title>
+    {% if page.title %}
+        {% assign title = page.title | append: " - " |  append: site.title %}
+    {% else %}
+        {% assign title = site.title %}
+    {% endif %}
+    <title>{{ title }}</title>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="GeyserMC" />
     <meta name="keywords"
         content="minecraft, bedrock, java, protocol, packet, pe, geyser, bridge, bedrock-edition, java-edition, proxy, java servers on bedrock, java server on phone, minecraft bridge, cross platform, protocol translator, translator, middleware, bedrock on java, minecraft server" />
-    <meta name="description"
-        content="Geyser is a bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition which allows you to join Minecraft Java servers with Bedrock Edition servers to enable true cross-platform." />
+    <meta name="description" content="{{ page.description | default: site.description }}" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="GeyserMC Blog">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
     <meta name="application-name" content="GeyserMC Blog">
     <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#2b5797">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blog.geysermc.org">
-    <meta property="og:title" content="GeyserMC Blog">
-    <meta property="og:description"
-        content="Geyser is a bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition which allows you to join Minecraft Java servers with Bedrock Edition servers to enable true cross-platform.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@geyser_mc">
