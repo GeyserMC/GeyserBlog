@@ -119,9 +119,10 @@ footer a:hover {
 }
 
 .wrapper {
-    max-width: 2000px;
+    width: 100%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
