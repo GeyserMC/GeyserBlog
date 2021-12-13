@@ -16,6 +16,12 @@ plugins:
 # Show excerpts on the homepage
 show_excerpts: true
 
+excerpt_separator: "<!-- more -->"
+
+# Disable the full post output in the feed xml
+feed:
+  excerpt_only: true
+
 collections:
   css:
     output: false
