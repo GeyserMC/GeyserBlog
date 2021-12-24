@@ -8,14 +8,6 @@ body {
 	font-family: 'Montserrat', sans-serif !important;
 }
 
-@media screen and (max-width: 768px) {
-	/* fixes some right side empty spaces on mobile */
-	html {
-		width: fit-content;
-		height: fit-content;
-	}
-}
-
 .navbar {
 	padding: 10px 10px 10px 10px;
     background-color: rgba(255, 255, 255, 0.0);
