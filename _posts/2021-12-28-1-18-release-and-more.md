@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "1.18 Release, MCProtocolLib, Refactors & More!"
-permalink: "1-18-mcprotocollib-refactors-and-more"
+permalink: "1-18-release-and-more"
 author: RednedEpic
 ---
 Hi everyone 👋
