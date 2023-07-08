@@ -18,6 +18,8 @@ Not only is this a special day because it's our birthday, but we have some exiti
 - As of just a few days ago, Geyser has hit 4,000 stars on GitHub, making it one of the top open-source Minecraft projects ever, and _the_ #1 Minecraft Bedrock project
 - Our Discord server has continued to grow, now approaching 25,000 Discord members
 
+![image](https://github.com/GeyserMC/GeyserBlog/assets/29153871/e2d83a49-aa94-46c4-b660-4bc150331818)
+
 None of these would have been possible without our amazing community. To that, we owe a debt of gratitude for the years of support from all of you 💙
 
 ## Project Development
