@@ -11,6 +11,8 @@ Today is a super special day - it's Geyser's birthday 🥳. Geyser is now four y
 
 Not only is this a special day because it's our birthday, but we have some exiting news and sneak peeks to share with you all, alongside general updates on our project development. Continue reading for more information!
 
+<!-- more -->
+
 ## Project Statistics 
 - Since the start of the project, there have been 3,337 commits contributed by 105 contributors
 - As of just a few days ago, Geyser has hit 4,000 stars on GitHub, making it one of the top open-source Minecraft projects ever, and _the_ #1 Minecraft Bedrock project
