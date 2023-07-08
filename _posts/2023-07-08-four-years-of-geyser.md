@@ -46,4 +46,4 @@ Not only are we wanting to expand what Geyser can do with custom features on _va
 
 ![Minecraft 7_8_2023 2_15_26 PM](https://github.com/GeyserMC/GeyserBlog/assets/29153871/5f60d150-3081-4fe8-9dba-ce04d8edcd85)
 
-And that's all I have to share for today! Once again, thank you all for your continued support over the years and we cannot wait to see the creativity you unleash on your server with these features! In typical Geyser fashion, here is a Gource render of all commits since the start of the project: https://youtu.be/ss6GlUkVgEE
+And that's all I have to share for today! Once again, thank you all for your continued support over the years and we cannot wait to see the creativity you unleash on your server with these features! In typical Geyser fashion, here is a Gource render of all commits since the start of the project: [https://youtu.be/ss6GlUkVgEE](https://youtu.be/ss6GlUkVgEE)
