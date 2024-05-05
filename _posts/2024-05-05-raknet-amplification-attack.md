@@ -227,7 +227,7 @@ bedrock:
   enable-proxy-protocol: true
   proxy-protocol-whitelisted-ips: [ "https://cosmic.global/ips/", "https://tcpshield.com/v4/" ]
 ```
-*Geyser configuration using a URL pointing a new-line sperated text file containing allowed IPs for proxy-protocol usage.*
+*Geyser configuration using a URL pointing a new-line separated text file containing allowed IPs for proxy-protocol usage.*
 
 
 ## Long Term Impact
