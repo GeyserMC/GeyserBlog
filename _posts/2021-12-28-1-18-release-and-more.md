@@ -16,7 +16,7 @@ In this post, we will be covering all the changes that led up to the 1.18 releas
 ## Writing a New Java Edition Protocol Library:
 To preface, we were not initially planning to do this big refactor all at once, but one thing led to another and here we are. Our initial plans were actually quite a bit different, with us initially planning to deprecate and remove MCProtocolLib from our codebase, [and instead implement support for Java Edition](https://github.com/GeyserMC/Protocol/tree/feature/java-3.0) inside of [Protocol](https://github.com/CloudburstMC/Protocol), our Bedrock Edition protocol library. We actually got it to a point where you could join and properly send/receive packets quite well!
 
-![Java Edition Lib](https://user-images.githubusercontent.com/29153871/144722769-88a6701f-4478-4608-96ae-a5c855b752b7.png)
+![Java Edition Lib](/assets/images/posts/2021-12-28-1-18-release-and-more/java-edition-lib.png)
 
 This was inline with our plans to continually improve performance and maintainability with Geyser, since using a library where much of the code is the same across both the Java & Bedrock protocol libraries would reduce much of the additional work we need to do in. A good example of this is inside our [ItemTranslator](https://github.com/GeyserMC/Geyser/blob/master/core/src/main/java/org/geysermc/geyser/translator/inventory/item/ItemTranslator.java#L295-L357) class, where we translate NBT objects from that used inside of MCProtocolLib, to that used inside of our Bedrock protocol library. We were intending to have this done with 1.18 since the update itself was not too drastic, meaning we could spend much more time on Geyser itself, rather than trying to update to the protocol.
 
@@ -28,7 +28,7 @@ With us now being in full control of MCProtocolLib, that gave us much more freed
 ## Improving Performance in MCProtocolLib:
 During the process of renaming packets to use Mojmap names, we found that most of the performance bottlenecks with MCProtocolLib & Geyser did not particularly lie with object translation, since it's relatively cheap in the grand scheme of things, but just the ways in which the library operated itself.
 
-![Slow Packets](https://user-images.githubusercontent.com/29153871/144722843-4bef937f-b393-487d-99fc-cc56a8eece58.PNG)
+![Slow Packets](/assets/images/posts/2021-12-28-1-18-release-and-more/slow-packets.png)
 
 What we identified is that inside of MinecraftProtocol, the main class inside of MCProtocolLib, that it was re-registering the Minecraft protocol individually for every player individually, any time the protocol state changed. To give a bit more background on this - the Minecraft protocol operates over four individual state. The first is the handshaking state, which is the state set when a client first makes a connection the Minecraft server. Once the handshake has completed, the next state is either the `login` or the `status` state. The status state is set when a client pings the server from the server list and never actually joins, while the login state is for when the client is logging into the server. Once the login is complete, the server then goes on to the `game` state, where you actually recieve packets that let you interact with the world.
 
