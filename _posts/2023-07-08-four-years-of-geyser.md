@@ -18,7 +18,7 @@ Not only is this a special day because it's our birthday, but we have some exiti
 - As of just a few days ago, Geyser has hit 4,000 stars on GitHub, making it one of the top open-source Minecraft projects ever, and _the_ #1 Minecraft Bedrock project
 - Our Discord server has continued to grow, now approaching 25,000 Discord members
 
-![image](https://github.com/GeyserMC/GeyserBlog/assets/29153871/e2d83a49-aa94-46c4-b660-4bc150331818)
+![GitHub Stars](/assets/images/posts/2023-07-08-four-years-of-geyser/github-stars.png)
 
 None of these would have been possible without our amazing community. To that, we owe a debt of gratitude for the years of support from all of you 💙
 
@@ -46,6 +46,6 @@ Additionally, since the Forge and Fabric platforms will use a common codebase fo
 ### One more thing...
 Not only are we wanting to expand what Geyser can do with custom features on _vanilla_ servers, but there's a **lot** we want to do with both Fabric and Forge in the near future. Keep an eye out for further announcements over the next few weeks 👀🍰🥳 
 
-![Minecraft 7_8_2023 2_15_26 PM](https://github.com/GeyserMC/GeyserBlog/assets/29153871/5f60d150-3081-4fe8-9dba-ce04d8edcd85)
+![Geyser Fabric](/assets/images/posts/2023-07-08-four-years-of-geyser/geyser-fabric.png)
 
 And that's all I have to share for today! Once again, thank you all for your continued support over the years and we cannot wait to see the creativity you unleash on your server with these features! In typical Geyser fashion, here is a Gource render of all commits since the start of the project: [https://youtu.be/ss6GlUkVgEE](https://youtu.be/ss6GlUkVgEE)
