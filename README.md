@@ -1,3 +1,8 @@
+> [!IMPORTANT] 
+> ### Deprecation warning
+> This repo contains the source code for the old GeyserMC blog website, which has since been integrated into the [main website repo](https://github.com/GeyserMC/GeyserWebsite/tree/master/blog). 
+
+
 # GeyserBlog
 The official GeyserMC blog!  
   
